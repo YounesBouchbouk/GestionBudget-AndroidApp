@@ -6,4 +6,228 @@
     android:layout_height="match_parent"
     tools:context=".Dashboard">
 
+    <View
+        android:id="@+id/viewback"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@color/reed"
+        app:layout_constraintBaseline_toTopOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/Dashboard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="Dashboard"
+        android:textColor="@color/white"
+
+        android:textSize="30dp"
+        app:layout_constraintEnd_toEndOf="@+id/viewback"
+        app:layout_constraintHorizontal_bias="0.06"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/thebigdiv"
+        android:layout_width="363dp"
+        android:layout_height="614dp"
+        android:layout_marginTop="30dp"
+        android:background="@color/silver"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Dashboard"
+        app:layout_constraintVertical_bias="0.0">
+
+
+        <LinearLayout
+            android:id="@+id/horizentalplac"
+            android:layout_width="361dp"
+            android:layout_height="612dp"
+            android:orientation="vertical"
+            tools:layout_editor_absoluteX="1dp"
+            tools:layout_editor_absoluteY="1dp">
+
+
+            <LinearLayout
+                android:id="@+id/budgetZone"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:orientation="horizontal"
+                android:layout_marginBottom="5dp">
+
+
+                <LinearLayout
+                    android:id="@+id/budgetdiv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:background="@color/black"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:id="@+id/textView5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Balance"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="5dp"
+                        android:textSize="14dp"
+                        android:textColor="@color/white"/>
+
+                    <TextView
+                        android:id="@+id/textView6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="500 DH"
+                        android:paddingTop="5dp"
+                        android:textAlignment="center"
+                        android:textSize="30dp"
+                        android:textColor="@color/white"/>
+                    />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/imagediv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:background="@color/white"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+
+                    <ImageView
+                        android:id="@+id/imageView"
+                        android:layout_width="96dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="right"
+                        android:paddingRight="20dp"
+                        app:srcCompat="@drawable/budget" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+
+
+            <LinearLayout
+                android:id="@+id/expence"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:layout_marginBottom="5dp"
+
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_height="100dp"
+                    android:background="@color/black"
+                    android:orientation="vertical"
+
+                    >
+
+                    <LinearLayout
+                        android:id="@+id/bigbox"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_weight="1"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            >
+
+
+                            <TextView
+                                android:id="@+id/textView2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Expence"
+                                android:textColor="@color/white"
+                                android:paddingLeft="10dp"
+                                android:textSize="15dp"
+
+                                />
+
+                            <TextView
+                                android:id="@+id/textView3"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="2030 DH"
+                                android:textColor="@color/white"
+                                android:textAlignment="center"
+                                android:textSize="20dp"
+                                android:paddingTop="20dp"
+                                />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_weight="1"
+                            android:layout_height="match_parent"
+                            android:background="@color/silver"
+                            android:orientation="vertical"
+                            >
+
+
+                            <ImageView
+                                android:id="@+id/imageView4"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                app:srcCompat="@drawable/logo" />
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_height="100dp"
+                    android:background="@color/green"
+                    android:orientation="vertical"
+
+                    >
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
