@@ -12,7 +12,8 @@
         android:layout_height="150dp"
         android:background="@color/reed"
         app:layout_constraintBaseline_toTopOf="parent"
-        />
+        tools:layout_editor_absoluteX="49dp"
+        tools:layout_editor_absoluteY="0dp" />
 
     <TextView
         android:id="@+id/Dashboard"
@@ -34,7 +35,7 @@
         android:layout_width="363dp"
         android:layout_height="614dp"
         android:layout_marginTop="30dp"
-        android:background="@color/silver"
+
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.493"
@@ -55,17 +56,18 @@
             <LinearLayout
                 android:id="@+id/budgetZone"
                 android:layout_width="match_parent"
-                android:layout_height="100dp"
+                android:layout_height="120dp"
                 android:orientation="horizontal"
-                android:layout_marginBottom="5dp">
+                android:background="@drawable/dashraduis"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="10dp">
 
 
                 <LinearLayout
                     android:id="@+id/budgetdiv"
                     android:layout_width="wrap_content"
-                    android:layout_height="100dp"
-                    android:background="@color/black"
-                    android:layout_weight="1"
+                    android:layout_height="120dp"
+                    android:layout_weight="2"
                     android:orientation="vertical">
 
 
@@ -76,7 +78,7 @@
                         android:text="Balance"
                         android:paddingLeft="10dp"
                         android:paddingTop="5dp"
-                        android:textSize="14dp"
+                        android:textSize="20dp"
                         android:textColor="@color/white"/>
 
                     <TextView
@@ -84,9 +86,9 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="500 DH"
-                        android:paddingTop="5dp"
+                        android:paddingTop="20dp"
                         android:textAlignment="center"
-                        android:textSize="30dp"
+                        android:textSize="40dp"
                         android:textColor="@color/white"/>
                     />
 
@@ -96,8 +98,8 @@
                 <LinearLayout
                     android:id="@+id/imagediv"
                     android:layout_width="wrap_content"
-                    android:layout_height="100dp"
-                    android:background="@color/white"
+                    android:layout_height="120dp"
+
                     android:layout_weight="1"
                     android:orientation="vertical">
 
@@ -109,6 +111,8 @@
                         android:layout_gravity="right"
                         android:paddingRight="20dp"
                         app:srcCompat="@drawable/budget" />
+
+
                 </LinearLayout>
 
 
@@ -120,8 +124,7 @@
             <LinearLayout
                 android:id="@+id/expence"
                 android:layout_width="match_parent"
-                android:layout_height="100dp"
-                android:background="@color/white"
+                android:layout_height="120dp"
                 android:orientation="horizontal"
                 android:layout_marginBottom="5dp"
 
@@ -130,9 +133,9 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_weight="1"
-                    android:layout_height="100dp"
-                    android:background="@color/black"
+                    android:layout_height="120dp"
                     android:orientation="vertical"
+                    android:background="@drawable/button_bg"
 
                     >
 
@@ -157,7 +160,8 @@
                                 android:text="Expence"
                                 android:textColor="@color/white"
                                 android:paddingLeft="10dp"
-                                android:textSize="15dp"
+                                android:paddingTop="5dp"
+                                android:textSize="20dp"
 
                                 />
 
@@ -168,7 +172,7 @@
                                 android:text="2030 DH"
                                 android:textColor="@color/white"
                                 android:textAlignment="center"
-                                android:textSize="20dp"
+                                android:textSize="22dp"
                                 android:paddingTop="20dp"
                                 />
                         </LinearLayout>
@@ -177,7 +181,6 @@
                             android:layout_width="match_parent"
                             android:layout_weight="1"
                             android:layout_height="match_parent"
-                            android:background="@color/silver"
                             android:orientation="vertical"
                             >
 
@@ -198,14 +201,85 @@
 
 
 
+
+
+
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_weight="1"
-                    android:layout_height="100dp"
-                    android:background="@color/green"
+                    android:layout_height="120dp"
                     android:orientation="vertical"
 
                     >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:layout_height="120dp"
+                        android:orientation="vertical"
+                        android:background="@drawable/button_bg"
+
+                        >
+
+                        <LinearLayout
+                            android:id="@+id/bigbox2"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_weight="1"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical"
+                                >
+
+
+                                <TextView
+                                    android:id="@+id/teiew2"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Expence"
+                                    android:textColor="@color/white"
+                                    android:paddingLeft="10dp"
+                                    android:paddingTop="5dp"
+                                    android:textSize="20dp"
+
+                                    />
+
+                                <TextView
+                                    android:id="@+id/textVi"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="2030 DH"
+                                    android:textColor="@color/white"
+                                    android:textAlignment="center"
+                                    android:textSize="20dp"
+                                    android:paddingTop="20dp"
+                                    />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_weight="1"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical"
+                                >
+
+
+                                <ImageView
+                                    android:id="@+id/imageView5"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    app:srcCompat="@drawable/logo" />
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
 
                 </LinearLayout>
 
@@ -221,9 +295,93 @@
 
 
 
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:orientation="horizontal"
+                android:background="@drawable/dashradius2"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="10dp">
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="120dp"
+
+                    android:layout_weight="2"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Total Expence"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="5dp"
+                        android:textSize="20dp"
+                        android:textColor="@color/white"/>
+
+                    <TextView
+                        android:id="@+id/totalexpense"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="500 DH"
+                        android:paddingTop="20dp"
+                        android:textAlignment="center"
+                        android:textSize="40dp"
+                        android:textColor="@color/white"/>
+                    />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="120dp"
+
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+
+                    <ImageView
+                        android:layout_width="96dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="right"
+                        android:paddingRight="20dp"
+                        app:srcCompat="@drawable/budget" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+
+
+
+
+
+
+
 
         </LinearLayout>
     </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <EditText
+        android:id="@+id/editTextDate2"
+        android:layout_width="156dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="20dp"
+        android:ems="10"
+        android:inputType="date"
+        app:layout_constraintBottom_toTopOf="@+id/thebigdiv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.452"
+        app:layout_constraintStart_toEndOf="@+id/Dashboard"
+        app:layout_constraintTop_toTopOf="@+id/viewback"
+        app:layout_constraintVertical_bias="0.491" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
